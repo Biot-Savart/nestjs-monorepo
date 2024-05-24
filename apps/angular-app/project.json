@@ -60,7 +60,10 @@
           "buildTarget": "angular-app:build:development"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "options": {
+        "port": 4300
+      }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -82,7 +85,7 @@
       "executor": "@nx/web:file-server",
       "options": {
         "buildTarget": "angular-app:build",
-        "port": 4200,
+        "port": 4300,
         "spa": true
       }
     }
