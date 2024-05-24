@@ -1,3 +1,4 @@
+import BigButton from './components/big-button/big-button';
 import styles from './page.module.scss';
 
 export default function Index() {
@@ -7,6 +8,7 @@ export default function Index() {
    * Note: The corresponding styles are in the ./index.scss file.
    */
   return (
+
     <div className={styles.page}>
       <div className="wrapper">
         <div className="container">
@@ -464,6 +466,7 @@ export default function Index() {
           </p>
         </div>
       </div>
+      <BigButton />
     </div>
   );
 }
